@@ -14,7 +14,7 @@ conda create -n PyLCM
 conda activate  PyLCM
 ```
 
-4. Install necessary packages (jupyter,numpy, scipy, pandas, matplotlib, plotly, ipywidgets)
+4. Install necessary packages (jupyter,numpy, scipy, pandas, matplotlib, plotly, ipywidgets, numba, tqdm)
 
 #For Mac/Linux users:
 ```
@@ -25,6 +25,8 @@ conda activate  PyLCM
   conda install pandas
   conda install matplotlib
   conda install ipywidgets
+  conda install numba
+  conda install tqdm
 ```
 
 #For Windows users:
