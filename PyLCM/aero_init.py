@@ -139,7 +139,7 @@ def aero_init(mode_aero_init, n_ptcl, P_parcel, z_parcel,T_parcel,q_parcel, N_ae
         # Generate log-normal distribution for the modes
         temp_arr = []
         for k in range(mode_count):
-            temp_arr.extend(np.random.lognormal(mu_aero[k], sigma_aero[k], n_particles_mode_int[k]))
+            temp_arr.extend(numpy_rng.lognormal(mu_aero[k], sigma_aero[k], n_particles_mode_int[k]))
 
         aero_r_seed = np.array(temp_arr)
 

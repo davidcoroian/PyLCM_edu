@@ -67,3 +67,8 @@ seperation_radius_ts = 25.0E-6
 #Parameters for Entrainment. 
 #-------------------------------------------------------
 z_env = np.arange(0, 3001, 10) # vertical levels up to 3000m
+
+# numpy random generator seed
+# randomly instantiated at start-up if set to None 
+numpy_seed=None
+numpy_rng=np.random.default_rng(numpy_seed)

@@ -3,6 +3,7 @@ import numpy as np
 from PyLCM.micro_particle import *
 from PyLCM.parcel import *
 from PyLCM.condensation import *
+from PyLCM.parameters import numpy_rng
 from tqdm import tqdm
 import itertools
  
@@ -200,7 +201,7 @@ def determine_collision(dt, particle1, particle2, rho_parcel, rho_liq, p_env, T_
     p_crit = max(particle1.A, particle2.A) * K / V_parcel * dt
     p_crit = p_crit*nptcl*(nptcl-1)/(half_length*2)
     
-    x_rand = np.random.random()
+    x_rand = numpy_rng.random()
     
     if p_crit > x_rand:
         check_final = True
